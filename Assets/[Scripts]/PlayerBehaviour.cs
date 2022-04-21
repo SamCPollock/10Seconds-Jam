@@ -9,6 +9,11 @@ public class PlayerBehaviour : MonoBehaviour
     public float moveSpeed;
     public float rotationSpeed;
 
+    public bool isRunning;
+
+    [Header("References")]
+    public Animator animator; 
+
     private void Awake()
     {
         
@@ -20,6 +25,7 @@ public class PlayerBehaviour : MonoBehaviour
 
     void Update()
     {
+        animator.SetBool("isRunning", isRunning);
         Vector3 movementVector3 = new Vector3(movementInput.x, 0, movementInput.y);
         transform.Translate(movementVector3 * moveSpeed * Time.deltaTime, Space.World);
 
@@ -28,12 +34,17 @@ public class PlayerBehaviour : MonoBehaviour
 
         if (movementDirection != Vector3.zero)
         {
-            //transform.forward = movementVector3;
-            Quaternion toRotation = Quaternion.LookRotation(movementVector3, Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+            isRunning = true;
+            transform.forward = movementVector3;
+            //Quaternion toRotation = Quaternion.LookRotation(movementVector3, Vector3.up);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
 
         }
 
+        else
+        {
+            isRunning = false;
+        }
     }
 
     void OnMove(InputValue value)

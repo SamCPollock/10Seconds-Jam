@@ -1,27 +1,12 @@
 fileFormatVersion: 2
-guid: cfff384f94dc3984b92e5dd56885defd
+guid: 0bdfc8149f8fe584d80b91726d9176ad
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Elvis_FaceAnimMap
-    second: {fileID: 2800000, guid: 605915ee6f4a7384c89898039e2be6c0, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FatElvis_diffuse
-    second: {fileID: 2800000, guid: 7ed205be1dfdc334294187808538fcac, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: FatElvis_normal
-    second: {fileID: 2800000, guid: e4133c571d567f74c81316ae0780a0f8, type: 3}
+    second: Sword And Shield Slash
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,9 +20,14 @@ ModelImporter:
     removeConstantScaleCurves: 1
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Copied Avatar Rig Configuration mis-match. Inbetween bone
+      rotation in copied configuration does not match rotation in animation file:\n\t'newVegas:Hair_Front'
+      : rotation error = 2.021983 deg\n"
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'mixamo.com' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'newVegas:Hair_Front' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -49,7 +39,36 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Sword And Shield Slash
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -93,10 +112,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - 1b2f863e1d12a4a4895deb19c8e41494
-  - dcdb00f6da15ec74696985870e30e627
-  - 0bdfc8149f8fe584d80b91726d9176ad
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -986,11 +1002,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: cfff384f94dc3984b92e5dd56885defd, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
