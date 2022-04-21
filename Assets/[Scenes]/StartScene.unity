@@ -468,11 +468,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "WASD: Move the King\nP: Pause\n\nTime Balls:\nKick orange balls to move
-    timer forward. \nKick blue balls to move timer back. \n\nTo Win: \nKick 10 balls
-    before the timer goes above 10 OR below 0."
+    timer forward. \nKick blue balls to move timer back. \n\nTo Win: \nKick ten balls
+    before the timer goes above ten OR below zero."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -608,8 +608,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -952,8 +952,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1297,8 +1297,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Instructions
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2086,8 +2086,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2755,10 +2755,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Sam Pollock
 
-    GBC, 2022'
+    George Brown College'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3183,8 +3183,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3440,7 +3440,7 @@ RectTransform:
   m_GameObject: {fileID: 1605262126}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 0.67499, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 145952918}
@@ -3448,7 +3448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 138}
+  m_AnchoredPosition: {x: 10, y: 174}
   m_SizeDelta: {x: 543.0433, y: 56.5434}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1605262128
@@ -3471,10 +3471,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Elvis \n& \nThe Soccer Balls of Time"
+  m_text: 'Elvis Presley
+
+    and
+
+    The Soccer Balls of Time'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
+  m_sharedMaterial: {fileID: 1735890327411015201, guid: 794108ad51d76c843907d15f3bb1a50e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
