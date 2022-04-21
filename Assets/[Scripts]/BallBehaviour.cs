@@ -40,24 +40,27 @@ public class BallBehaviour : MonoBehaviour
         if (collision.collider.gameObject.CompareTag("Player"))
         {
             // hit the player
-            if (isGreen)
+            if (collision.gameObject.GetComponent<PlayerBehaviour>().canScore)
             {
-                gameTimer.ReverseTime(1);
-            }
-            else
-            {
-                gameTimer.ReverseTime(-1);
+                if (isGreen)
+                {
+                    gameTimer.ReverseTime(1);
+                }
+                else
+                {
+                    gameTimer.ReverseTime(-1);
 
+                }
             }
 
         }
 
-        if (collision.collider.gameObject.CompareTag("Kicker"))
-        {
-            // got kicked
-            isGreen = true;
-            speed = speed * 2f;
-            light.color = Color.green;
-        }
+        //if (collision.collider.gameObject.CompareTag("Kicker"))
+        //{
+        //    // got kicked
+        //    isGreen = true;
+        //    speed = speed * 2f;
+        //    light.color = Color.green;
+        //}
     }
 }

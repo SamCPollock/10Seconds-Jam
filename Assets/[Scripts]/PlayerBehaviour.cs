@@ -14,6 +14,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     public bool isAttacking = false;
 
+    public bool canScore = true;
+
     [Header("References")]
     public Animator animator;
     public GameObject kickSphere;
@@ -98,8 +100,15 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ball"))
         {
+            canScore = false;
             audioSource.Play();
             collision.gameObject.GetComponent<Rigidbody>().AddExplosionForce(kickStrength, transform.position, 1f);
+            Invoke("RestoreCanScore", 0.2f);
         }    
+
+    }
+    private void RestoreCanScore()
+    {
+        canScore = true;
     }
 }
