@@ -8,6 +8,7 @@ public class PlayerBehaviour : MonoBehaviour
     private Vector2 movementInput;
     public float moveSpeed;
     public float rotationSpeed;
+    public float kickStrength;
 
     public bool isRunning;
 
@@ -15,7 +16,10 @@ public class PlayerBehaviour : MonoBehaviour
 
     [Header("References")]
     public Animator animator;
-    public GameObject kickSphere; 
+    public GameObject kickSphere;
+    public GameObject pauseCanvas;
+
+    private AudioSource audioSource;
 
     private void Awake()
     {
@@ -23,7 +27,7 @@ public class PlayerBehaviour : MonoBehaviour
     }
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -75,5 +79,27 @@ public class PlayerBehaviour : MonoBehaviour
     {
         isAttacking = false;
         kickSphere.SetActive(false);
+    }
+
+    void OnPause()
+    {
+        pauseCanvas.SetActive(true);
+        Time.timeScale = 0;
+    }
+
+    public void Unpause()
+    {
+        pauseCanvas.SetActive(false);
+        Time.timeScale = 1;
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ball"))
+        {
+            audioSource.Play();
+            collision.gameObject.GetComponent<Rigidbody>().AddExplosionForce(kickStrength, transform.position, 1f);
+        }    
     }
 }

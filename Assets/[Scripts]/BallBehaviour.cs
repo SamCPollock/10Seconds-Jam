@@ -27,7 +27,10 @@ public class BallBehaviour : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = rb.velocity.normalized * speed;
+        if (rb.velocity.magnitude < speed)
+        {
+            rb.velocity = rb.velocity.normalized * speed;
+        }
     }
 
 
