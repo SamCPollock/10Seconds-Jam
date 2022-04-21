@@ -10,7 +10,7 @@ public class GameTimer : MonoBehaviour
     public Slider timeSlider;
     public RectTransform handleTransform;
 
-    public float timeRemaining = 10f;
+    public float timeRemaining = 0f;
 
     public bool timeIsGoingForward = true;
 
@@ -18,21 +18,21 @@ public class GameTimer : MonoBehaviour
 
     void Start()
     {
-        
+        audioSource.time = 49;
     }
 
     void Update()
     {
         if (timeIsGoingForward)
         {
-            timeRemaining -= Time.deltaTime;
-            handleTransform.localScale = new Vector3(-2, 2, 2);
+            timeRemaining += Time.deltaTime;
+            handleTransform.localScale = new Vector3(2, 2, 2);
         }
 
         else
         {
-            timeRemaining += Time.deltaTime;
-            handleTransform.localScale = new Vector3(2, 2, 2);
+            timeRemaining -= Time.deltaTime;
+            handleTransform.localScale = new Vector3(-2, 2, 2);
         }
         timerText.text = Mathf.RoundToInt(timeRemaining).ToString();
         timeSlider.value = timeRemaining;
