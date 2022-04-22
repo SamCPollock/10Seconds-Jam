@@ -1657,6 +1657,8 @@ GameObject:
   - component: {fileID: 156028078}
   - component: {fileID: 156028077}
   - component: {fileID: 156028076}
+  - component: {fileID: 156028079}
+  - component: {fileID: 156028080}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -1770,17 +1772,42 @@ RectTransform:
   m_GameObject: {fileID: 156028075}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.36938533, y: 0.36938533, z: 0.36938533}
+  m_LocalScale: {x: 0.73877066, y: 0.73877066, z: 0.73877066}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1998078002}
-  m_RootOrder: 0
+  m_Father: {fileID: 810097041}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1, y: -6.48}
+  m_AnchoredPosition: {x: -71.99999, y: -2.9600174}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &156028079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156028075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662809940fa951d41aad097b07335862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &156028080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156028075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b19b328320c6844cb4d43546cfae1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  followTarget: {fileID: 1998078001}
 --- !u!1001 &161762026
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5343,6 +5370,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1998078002}
+  - {fileID: 156028078}
   m_Father: {fileID: 425235332}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12423,8 +12451,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 156028078}
+  m_Children: []
   m_Father: {fileID: 810097041}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
